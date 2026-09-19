@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حسينية موكب فاطمة الزهراء عليها السلام | البث المباشر</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Vazirmatn:wght@200;300;400;500;700;800&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+@font-face {
+  font-family: 'Estedad';
+  src: url('Estedad-Regular.woff2') format('woff2'),
+       url('Estedad-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5
+   Genre: editorial · Macrostructure: Bento Grid · Theme: custom Karbala Night
+   Nav: N6 Masthead · Footer: Ft2 Minimal · Enrichment: E1 live-pulse CSS art */
+:root{
+  --color-paper: #08090a;
+  --color-paper-2:#111214;
+  --color-paper-3:#1a1d1f;
+  --color-ink:#f5f1e8;
+  --color-ink-soft:rgba(245,241,232,.72);
+  --color-ink-mute:rgba(245,241,232,.42);
+  --color-accent:#c4121f;
+  --color-accent-2:#d4af37;
+  --color-accent-soft:rgba(196,18,31,.14);
+  --color-line:rgba(212,175,55,.13);
+  --color-line-strong:rgba(212,175,55,.22);
+  --font-display:'Estedad','Tahoma',sans-serif;
+  --font-body:'Estedad','Tahoma',sans-serif;
+  --font-quran:'Estedad','Tahoma',sans-serif;
+  --radius:14px;
+  --max:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--font-body);background:var(--color-paper);color:var(--color-ink);line-height:1.9}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--color-accent-2);outline-offset:3px}
+.skip{position:absolute;top:-100px;right:1rem;background:var(--color-accent-2);color:#000;padding:.5rem 1rem;border-radius:0 0 8px 8px;z-index:9999;text-decoration:none}
+.skip:focus{top:0}
+
+/* TOP BAR */
+.topbar{background:var(--color-paper-2);border-bottom:1px solid var(--color-line);font-size:.78rem;color:var(--color-ink-mute)}
+.topbar-inner{max-width:var(--max);margin:0 auto;padding:.4rem 1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.topbar-live{display:inline-flex;align-items:center;gap:.45rem;color:var(--color-accent);font-weight:700;letter-spacing:.04em}
+.topbar-live i{width:7px;height:7px;background:var(--color-accent);border-radius:50%;box-shadow:0 0 0 4px rgba(196,18,31,.18);animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(196,18,31,.4)}70%{box-shadow:0 0 0 7px rgba(196,18,31,0)}100%{box-shadow:0 0 0 0 rgba(196,18,31,0)}}
+
+/* NAV - N6 Masthead */
+nav{position:sticky;top:0;z-index:1000;background:rgba(8,9,10,.92);backdrop-filter:blur(16px) saturate(1.15);border-bottom:1px solid var(--color-line)}
+.nav-mast{max-width:var(--max);margin:0 auto;padding:.7rem 1.5rem;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem}
+.nav-mast .side{display:flex;align-items:center;gap:1.2rem}
+.nav-mast .side:first-child{justify-content:flex-start}
+.nav-mast .side:last-child{justify-content:flex-end}
+.nav-links{display:flex;list-style:none;gap:1.4rem}
+.nav-links a{color:var(--color-ink-soft);text-decoration:none;font-size:.88rem;font-weight:300;position:relative;padding:.2rem 0}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;right:0;width:0;height:1px;background:var(--color-accent-2);transition:width .25s}
+.nav-links a:hover{color:var(--color-accent-2)} .nav-links a:hover::after{width:100%}
+.brand{justify-self:center;display:flex;flex-direction:column;align-items:center;gap:.35rem;text-decoration:none}
+.brand img{width:88px;height:88px;object-fit:contain;background:transparent;border:none;filter:drop-shadow(0 8px 22px rgba(0,0,0,.55));padding:0}
+.brand span{font-family:var(--font-display);color:var(--color-accent-2);font-size:.82rem;letter-spacing:.08em;font-weight:700}
+.nav-cta{padding:.48rem 1.05rem;border-radius:999px;background:var(--color-accent);color:#fff;text-decoration:none;font-size:.82rem;font-weight:700;box-shadow:0 6px 16px rgba(196,18,31,.28)}
+.nav-cta:hover{filter:brightness(1.08)}
+.hamburger{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--color-line);background:var(--color-paper-2);color:var(--color-accent-2);cursor:pointer}
+
+/* HERO - LIVE */
+.hero{max-width:var(--max);margin:0 auto;padding:1.6rem 1.5rem 1rem;display:grid;grid-template-columns:1.55fr .85fr;gap:1.2rem;align-items:start}
+.hero-player{position:relative;background:var(--color-paper-2);border:1px solid var(--color-line);border-radius:16px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.player-thumb{position:relative;aspect-ratio:16/9;background:transparent;overflow:hidden}
+.player-thumb img{width:100%;height:100%;object-fit:cover;opacity:.92;filter:brightness(.92)}
+.player-thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, transparent 45%, rgba(0,0,0,.72) 100%)}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;background:var(--color-accent);display:grid;place-items:center;color:#fff;box-shadow:0 10px 28px rgba(196,18,31,.4);cursor:pointer;border:3px solid rgba(255,255,255,.9);z-index:2}
+.play:hover{transform:translate(-50%,-50%) scale(1.04)}
+.player-meta{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:1rem 1.1rem;display:flex;justify-content:space-between;align-items:end;gap:1rem}
+.player-meta h1{font-family:var(--font-display);font-size:1.25rem;line-height:1.3;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.player-meta h1 small{display:block;font-family:var(--font-body);font-size:.78rem;color:var(--color-accent-2);font-weight:500;margin-top:.2rem}
+.live-badge{display:inline-flex;align-items:center;gap:.4rem;padding:.28rem .6rem;background:var(--color-accent);color:#fff;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.06em}
+.player-bar{padding:.7rem 1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:var(--color-paper-3);border-top:1px solid var(--color-line);flex-wrap:wrap}
+.player-bar .actions{display:flex;gap:.6rem}
+.btn-ghost{padding:.5rem .9rem;border-radius:999px;border:1px solid var(--color-line-strong);background:transparent;color:var(--color-ink-soft);text-decoration:none;font-size:.82rem}
+.btn-ghost:hover{border-color:var(--color-accent-2);color:var(--color-accent-2)}
+.btn-primary{padding:.5rem 1rem;border-radius:999px;background:var(--color-accent-2);color:#000;text-decoration:none;font-weight:800;font-size:.82rem}
+.hero-side{display:grid;gap:1rem}
+.side-card{background:var(--color-paper-2);border:1px solid var(--color-line);border-radius:16px;padding:1.1rem}
+.side-card h3{font-family:var(--font-display);font-size:1.05rem;color:var(--color-accent-2);margin-bottom:.6rem;display:flex;align-items:center;gap:.5rem}
+.side-card h3::before{content:'';width:3px;height:18px;background:var(--color-accent);border-radius:999px;display:inline-block}
+.schedule{list-style:none;display:grid;gap:.7rem}
+.schedule li{display:flex;justify-content:space-between;align-items:center;padding:.6rem .7rem;background:var(--color-paper-3);border-radius:10px;border:1px solid transparent}
+.schedule li.active{border-color:rgba(196,18,31,.32);background:rgba(196,18,31,.08)}
+.schedule li b{font-size:.88rem;font-weight:600}
+.schedule li span{font-size:.78rem;color:var(--color-ink-mute)}
+.quran-box{text-align:center;padding:1.2rem;background:linear-gradient(180deg, #fff 0%, #fdf8e8 100%);border-radius:12px;color:#1a1a1a;border:1px solid rgba(212,175,55,.18)}
+.quran-box .q{font-family:var(--font-quran);font-size:1.55rem;line-height:1.9;color:#1e2b1a}
+.quran-box small{color:var(--color-accent);font-size:.82rem}
+
+/* BENTO LATMIYAT */
+.section{max-width:var(--max);margin:0 auto;padding:2.2rem 1.5rem}
+.eyebrow{display:flex;align-items:center;gap:.6rem;margin-bottom:.5rem}
+.eyebrow i{width:26px;height:1px;background:var(--color-accent)}
+.eyebrow i:last-child{background:var(--color-accent-2)}
+.eyebrow span{font-size:.76rem;letter-spacing:.22em;color:var(--color-accent-2);font-weight:700}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.sec-head h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.15rem);color:var(--color-ink);line-height:1.2}
+.sec-head h2 em{font-style:normal;color:var(--color-accent)}
+.sec-head p{color:var(--color-ink-mute);font-size:.9rem;max-width:420px}
+.bento{display:grid;grid-template-columns:repeat(12, minmax(0,1fr));gap:1rem}
+.bento .item{position:relative;border-radius:14px;overflow:hidden;background:var(--color-paper-2);border:1px solid var(--color-line);transition:transform .25s}
+.bento .item:hover{transform:translateY(-3px)}
+.bento .item img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.88)}
+.bento .item::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, transparent 35%, rgba(0,0,0,.82) 100%)}
+.bento .item .cap{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:1rem}
+.bento .item .cap h4{font-size:.95rem;line-height:1.4;color:#fff}
+.bento .item .cap span{font-size:.75rem;color:var(--color-accent-2)}
+.bento .span-6{grid-column:span 6} .span-4{grid-column:span 4} .span-8{grid-column:span 8} .span-3{grid-column:span 3}
+.bento .item.playable::before{content:'▶';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:rgba(196,18,31,.92);color:#fff;display:grid;place-items:center;z-index:3;font-size:.9rem;border:2px solid #fff}
+
+/* STATS */
+.stats{max-width:var(--max);margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:repeat(4, minmax(0,1fr));gap:1rem}
+.stat{background:var(--color-paper-2);border:1px solid var(--color-line);border-radius:12px;padding:1rem;text-align:center}
+.stat b{font-size:1.5rem;color:var(--color-accent-2);display:block}
+.stat span{font-size:.78rem;color:var(--color-ink-mute)}
+
+/* COVERFLOW */
+.coverflow-wrap{position:relative;background:#050607;border:1px solid var(--color-line);border-radius:16px;overflow:hidden;padding:2rem 0 1.6rem;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.coverflow-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.coverflow-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.2) blur(28px);transform:scale(1.1)}
+.coverflow-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at center, rgba(0,0,0,.1) 0%, rgba(5,6,7,.94) 100%)}
+.coverflow-inner{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:0 1rem;display:flex;flex-direction:column;align-items:center}
+.cf-stage{position:relative;width:100%;height:520px;display:flex;justify-content:center;align-items:center;perspective:1400px;margin:1rem 0}
+.cf-card{position:absolute;width:320px;height:480px;border-radius:16px;overflow:hidden;background:#171311;border:1px solid rgba(255,255,255,.1);transition:all 750ms cubic-bezier(.25,1,.5,1);cursor:pointer}
+.cf-card.is-center{box-shadow:0 20px 60px rgba(0,0,0,.85), 0 0 24px rgba(212,175,55,.18)}
+.cf-card img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cf-card .vignette{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.32) 0%, transparent 32%, rgba(0,0,0,.78) 100%);z-index:1}
+.cf-card .overlay{position:relative;z-index:2;height:100%;padding:16px;display:flex;flex-direction:column;justify-content:space-between;text-align:center}
+.cf-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15);color:#fff;display:grid;place-items:center;backdrop-filter:blur(8px);cursor:pointer;z-index:5}
+.cf-nav:hover{background:var(--color-accent-2);color:#000;border-color:var(--color-accent-2)}
+.cf-nav.prev{right:16px} .cf-nav.next{left:16px}
+.cf-dots{display:flex;gap:7px}
+.cf-dots button{height:7px;border-radius:999px;border:none;cursor:pointer}
+.cf-grid{display:grid;grid-template-columns:repeat(4, minmax(0,1fr));gap:.8rem;margin-top:1.4rem;width:100%}
+.cf-grid .mini{border-radius:10px;overflow:hidden;position:relative;aspect-ratio:4/3;border:1px solid var(--color-line);cursor:pointer}
+.cf-grid .mini img{width:100%;height:100%;object-fit:cover}
+.cf-grid .mini span{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;font-size:.75rem;padding:.9rem .4rem .4rem;text-align:center}
+
+/* HADITH / EVENTS / CONTACT */
+.hadith{max-width:860px;margin:0 auto;background:linear-gradient(180deg, #fff 0%, #fdf8e8 100%);border-radius:16px;padding:2.2rem 1.5rem;text-align:center;border:1px solid rgba(212,175,55,.18);color:#1a1a1a}
+.hadith q{font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:#1e2b1a;display:block;line-height:2}
+.events{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:1rem}
+.event{background:var(--color-paper-2);border:1px solid var(--color-line);border-radius:14px;padding:1.4rem;text-align:center}
+.event h3{font-family:var(--font-display);color:var(--color-ink);font-size:1.1rem}
+.event p{color:var(--color-ink-mute);font-size:.85rem;margin:.4rem 0 .8rem}
+.cd{display:flex;justify-content:center;gap:.45rem;margin:.8rem 0}
+.cd div{width:54px;height:54px;border:1px solid rgba(212,175,55,.28);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,.18)}
+.cd b{font-size:1rem;color:#fff} .cd span{font-size:.68rem;color:var(--color-accent-2)}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:1.4rem;align-items:start}
+.contact .info h3{font-family:var(--font-display);color:var(--color-accent-2)}
+.contact .info p{color:var(--color-ink-soft);font-size:.9rem;margin:.4rem 0}
+.form{background:var(--color-paper-2);border:1px solid var(--color-line);border-radius:14px;padding:1.2rem}
+.form input,.form textarea{width:100%;padding:.8rem 1rem;margin-bottom:.8rem;border:1px solid var(--color-line-strong);border-radius:10px;background:rgba(255,255,255,.04);color:var(--color-ink);font-family:var(--font-body)}
+.form button{padding:.7rem 1.6rem;border-radius:999px;background:var(--color-accent);color:#fff;border:none;font-weight:700;cursor:pointer}
+
+/* FOOTER - Ft2 Minimal */
+footer{background:#040505;border-top:1px solid var(--color-line);padding:2rem 1.5rem 1.2rem}
+.footer-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.5fr .7fr .7fr;gap:1.5rem}
+.footer-inner h4{font-family:var(--font-display);color:var(--color-accent-2);margin-bottom:.6rem}
+.footer-inner a,.footer-inner p{color:var(--color-ink-mute);font-size:.84rem;text-decoration:none;display:block;margin-bottom:.35rem}
+.footer-bottom{max-width:var(--max);margin:1.4rem auto 0;padding-top:1rem;border-top:1px solid var(--color-line);text-align:center;color:var(--color-ink-mute);font-size:.78rem}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(14px);transition:.6s}
+.reveal.visible{opacity:1;transform:none}
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr}
+  .bento .span-6,.bento .span-4,.bento .span-8,.bento .span-3{grid-column:span 6}
+  .stats{grid-template-columns:repeat(2, minmax(0,1fr))}
+  .events{grid-template-columns:1fr 1fr}
+  .contact{grid-template-columns:1fr}
+  .cf-stage{height:480px} .cf-card{width:280px;height:430px}
+  .cf-grid{grid-template-columns:repeat(2, minmax(0,1fr))}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-mast{grid-template-columns:auto 1fr auto} .nav-links{display:none} .hamburger{display:grid}
+  .nav-mast .side:last-child{justify-content:flex-end}
+}
+@media (max-width:640px){
+  .bento .span-6,.bento .span-4,.bento .span-8,.bento .span-3{grid-column:span 12}
+  .events{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .cf-stage{height:420px} .cf-card{width:260px;height:400px}
+  .cf-nav.prev{right:6px} .cf-nav.next{left:6px}
+  .footer-inner{grid-template-columns:1fr}
+  .topbar-inner{justify-content:center}
+  .hero{padding:1rem}
+}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none} *{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a href="#live" class="skip">تخطى إلى المحتوى</a>
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>جاده آبادان — روستای قلعه طرفی — موكب فاطمة الزهراء (ع)</span>
+    <span class="topbar-live"><i></i> موكب فاطمة الزهراء — جاده آبادان، قلعه طرفی</span>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-mast">
+    <div class="side">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#live">البث</a></li>
+        <li><a href="#latmiyat">اللطميات</a></li>
+        <li><a href="#gallery">المعرض</a></li>
+        <li><a href="#events">المناسبات</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+      </ul>
+    </div>
+    <a href="#" class="brand"><img src="logo-hand.png" alt="شعار موكب الزهراء - موكب فاطمة الزهراء"><span>موكب فاطمة الزهراء</span></a>
+    <div class="side">
+      <a href="#live" class="nav-cta">شاهد البث</a>
+      <button class="hamburger" id="menuBtn" aria-label="القائمة">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO LIVE -->
+<div class="hero" id="live">
+  <div class="hero-player reveal">
+    <div class="player-thumb">
+      <img src="Prophet_handing_sword_to_companion_20260914212850.jpeg" alt="البث المباشر">
+      <div class="play" onclick="alert('البث المباشر — سيتم التوجيه إلى يوتيوب موكب الزهراء الطالبین')">▶</div>
+      <div class="player-meta">
+        <h1>موكب فاطمة الزهراء — جاده آبادان، روستای قلعه طرفی <small>خدمة حسينية وامتداد نور الزهراء (ع)</small></h1>
+        <span class="live-badge">● LIVE</span>
+      </div>
+    </div>
+    <div class="player-bar">
+      <span style="font-size:.84rem;color:var(--color-ink-soft)">١٢٤٬٥٠٠ مشاهدة · منذ ساعتين · جودة 1080p</span>
+      <div class="actions">
+        <a href="#" class="btn-ghost">مشاركة</a>
+        <a href="#latmiyat" class="btn-primary">الأرشيف الكامل</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-side">
+    <div class="side-card reveal">
+      <h3>جدول هذا الأسبوع</h3>
+      <ul class="schedule">
+        <li class="active"><b>الليلة — باسم الكربلائي</b><span>٩:٠٠ م</span></li>
+        <li><b>دعاء كميل — الخميس</b><span>٨:٣٠ م</span></li>
+        <li><b>مجلس الزهراء (ع)</b><span>الجمعة ٧:٠٠ م</span></li>
+        <li><b>محفل قرآني</b><span>السبت ٥:٠٠ م</span></li>
+      </ul>
+    </div>
+    <div class="side-card reveal">
+      <div class="quran-box">
+        <div class="q">فَاطِمَةُ بَضْعَةٌ مِنِّي</div>
+        <small>رسول الله (ص) — موكب الزهراء الطالبیین</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LATMIYAT BENTO -->
+<section class="section" id="latmiyat">
+  <div class="eyebrow"><i></i><span>الأرشيف</span><i></i></div>
+  <div class="sec-head">
+    <h2>لطميات <em>الزهراء</em></h2>
+    <p>مختارات من مجالس حسينية — أرشيف صوتي ومرئي لموكب فاطمة الزهراء</p>
+  </div>
+  <div class="bento">
+    <a href="#" class="item span-8 playable reveal" style="min-height:280px"><img src="سيف_ذو_الفقار_في_الصحراء_20260914211137.jpeg" alt=""><div class="cap"><h4>ليش تلو مني لو طينت خدي — باسم الكربلائي</h4><span>موكب الزهراء — ٢٠٢٦ · ٣١ ثانية</span></div></a>
+    <a href="#" class="item span-4 playable reveal" style="min-height:280px"><img src="Angel_descending_with_sacred_sword_20260914211146.jpeg" alt=""><div class="cap"><h4>رفع راية الحزن — محرم ١٤٤٧</h4><span>باسم الكربلائي · ١:٤٤</span></div></a>
+    <a href="#" class="item span-4 playable reveal" style="min-height:220px"><img src="غيوم_سماوية_وأشعة_شمس_ذهبية_20260914211155.jpeg" alt=""><div class="cap"><h4>كتبوا عالكاع — مجلس الليلة</h4><span>موكب الزهراء</span></div></a>
+    <a href="#" class="item span-4 playable reveal" style="min-height:220px"><img src="Glowing_sword_blade_20260914211209.jpeg" alt=""><div class="cap"><h4>النصل المتوهج — آيات من نور</h4><span>ذو الفقار</span></div></a>
+    <a href="#" class="item span-4 playable reveal" style="min-height:220px"><img src="نور_ملاك_يصد_سيفاً_20260914211215.jpeg" alt=""><div class="cap"><h4>نور الملاك — مشهد روحاني</h4><span>موكب الزهراء</span></div></a>
+    <a href="#" class="item span-3 playable reveal" style="min-height:200px"><img src="Figure_holding_Dhu_al-Fiqars_sword_20260914211733.jpeg" alt=""><div class="cap"><h4>حامل ذو الفقار</h4><span>راية الحسين</span></div></a>
+    <a href="#" class="item span-3 playable reveal" style="min-height:200px"><img src="سيف_ذي_الفقار_وصحيفة_ذهبية_20260914211749.jpeg" alt=""><div class="cap"><h4>السيف والصحيفة الذهبية</h4><span>علم ونور</span></div></a>
+    <a href="#" class="item span-3 playable reveal" style="min-height:200px"><img src="Prophet_handing_sword_to_companion_20260914212850.jpeg" alt=""><div class="cap"><h4>تسليم السيف للوصي</h4><span>لحظة تاريخية</span></div></a>
+    <a href="#" class="item span-3 playable reveal" style="min-height:200px"><img src="logo-hand.png" alt=""><div class="cap"><h4>موكب فاطمة الزهراء — الشعار</h4><span>الأهواز</span></div></a>
+  </div>
+</section>
+
+<div class="stats reveal">
+  <div class="stat"><b>١٢+</b><span>سنة خدمة حسينية</span></div>
+  <div class="stat"><b>١٫٥K+</b><span>مجلس موثق</span></div>
+  <div class="stat"><b>٢٠٠+</b><span>طالب مشارك</span></div>
+  <div class="stat"><b>24/7</b><span>بث وأرشيف</span></div>
+</div>
+
+<!-- GALLERY COVERFLOW -->
+<section class="section" id="gallery">
+  <div class="eyebrow"><i></i><span>المعرض</span><i></i></div>
+  <div class="sec-head">
+    <h2>معرض الصور — <em>ذو الفقار والنور</em></h2>
+    <p>نفس ۸ عکس موکب، حالا با Coverflow حرفه‌ای — امضای Hallmark.</p>
+  </div>
+  <div class="coverflow-wrap reveal" id="cfWrap">
+    <div class="coverflow-bg"><img id="cfBg" src="سيف_ذو_الفقار_في_الصحراء_20260914211137.jpeg" alt=""></div>
+    <div class="coverflow-inner">
+      <div class="cf-stage" id="cfStage">
+        <button class="cf-nav prev" id="cfPrev" aria-label="السابق">‹</button>
+        <button class="cf-nav next" id="cfNext" aria-label="التالي">›</button>
+      </div>
+      <div class="cf-dots" id="cfDots"></div>
+      <div class="cf-grid" id="cfGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- HADITH -->
+<section class="section" style="padding-top:1rem">
+  <div class="hadith reveal">
+    <div style="color:var(--color-accent);font-size:1.2rem;margin-bottom:.4rem">﷽</div>
+    <q>فاطمة بضعة مني، فمن أغضبها أغضبني</q>
+    <small style="color:var(--color-accent)">— رسول الله (صلى الله عليه وآله وسلم)</small>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section" id="events">
+  <div class="eyebrow"><i></i><span>المناسبات</span><i></i></div>
+  <div class="sec-head"><h2>المناسبات القادمة</h2><p>شاركنا إحياء الذكر — الأهواز، موكب الزهراء الطالبین.</p></div>
+  <div class="events">
+    <div class="event reveal" style="border-top:3px solid var(--color-accent)"><div style="display:inline-flex;align-items:center;gap:.4rem;padding:.22rem .6rem;background:rgba(196,18,31,.12);color:var(--color-accent);border-radius:999px;font-size:.72rem;font-weight:700;margin-bottom:.5rem">١ — الفاطمية الأولى</div><h3>شهادة فاطمة الزهراء (ع)</h3><p>١٣ جمادى الأولى ١٤٤٧هـ<br>جاده آبادان — قلعه طرفی · قاعة الموكب — ٧:٠٠ م</p><div class="cd"><div><b id="d1">--</b><span>يوم</span></div><div><b id="h1">--</b><span>ساعة</span></div><div><b id="m1">--</b><span>دقيقة</span></div><div><b id="s1">--</b><span>ثانية</span></div></div><a href="#contact" class="btn-ghost" style="margin-top:.6rem;display:inline-block">التسجيل للمجلس</a></div>
+    <div class="event reveal" style="border-top:3px solid var(--color-accent)"><div style="display:inline-flex;align-items:center;gap:.4rem;padding:.22rem .6rem;background:rgba(196,18,31,.12);color:var(--color-accent);border-radius:999px;font-size:.72rem;font-weight:700;margin-bottom:.5rem">٢ — الفاطمية الثانية</div><h3>شهادة فاطمة الزهراء (ع)</h3><p>٣ جمادى الآخرة ١٤٤٧هـ<br>جاده آبادان — قلعه طرفی · قاعة الموكب — ٧:٣٠ م</p><div class="cd"><div><b id="d2">--</b><span>يوم</span></div><div><b id="h2">--</b><span>ساعة</span></div><div><b id="m2">--</b><span>دقيقة</span></div><div><b id="s2">--</b><span>ثانية</span></div></div><a href="#contact" class="btn-ghost" style="margin-top:.6rem;display:inline-block">التسجيل للمجلس</a></div>
+    <div class="event reveal" style="border-top:3px solid var(--color-accent-2)"><div style="display:inline-flex;align-items:center;gap:.4rem;padding:.22rem .6rem;background:rgba(212,175,55,.12);color:var(--color-accent-2);border-radius:999px;font-size:.72rem;font-weight:700;margin-bottom:.5rem">٣ — ختام الفاطمية</div><h3>ختام الأيام الفاطمية</h3><p>٨ جمادى الآخرة ١٤٤٧هـ<br>جاده آبادان — قلعه طرفی · مجلس ختام — ٨:٠٠ م</p><div class="cd"><div><b id="d3">--</b><span>يوم</span></div><div><b id="h3">--</b><span>ساعة</span></div><div><b id="m3">--</b><span>دقيقة</span></div><div><b id="s3">--</b><span>ثانية</span></div></div><a href="#contact" class="btn-ghost" style="margin-top:.6rem;display:inline-block">التسجيل للمجلس</a></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="eyebrow"><i></i><span>تواصل</span><i></i></div>
+  <div class="sec-head"><h2>اتصل بنا</h2><p>موكب الزهراء الطالبین — الأهواز، بإشراف الحاج علي الحمداني.</p></div>
+  <div class="contact">
+    <div class="info reveal">
+      <h3>موكب الزهراء الطالبین</h3>
+      <p>📍 الأهواز — ایران — موكب الزهراء الطالبین (ع)</p>
+      <p>📞 <a href="tel:+964000000000" style="color:var(--color-accent-2)">+964 000 000 000</a></p>
+      <p>📷 انستغرام: <a href="https://instagram.com/alaghileir" target="_blank" style="color:var(--color-accent-2)">موكب فاطمة الزهراء</a></p>
+      <p>▶ یوتیوب / آپارات: بث مباشر باسم الكربلائي</p>
+    </div>
+    <form class="form reveal" onsubmit="event.preventDefault(); alert('تم الإرسال — شكراً لتواصلكم'); this.reset();">
+      <input placeholder="الاسم الكامل" required>
+      <input type="email" placeholder="البريد" required>
+      <textarea placeholder="رسالتك..." rows="4" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem"><img src="logo-hand.png" alt="شعار" style="width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 6px 14px rgba(0,0,0,.45))"><h4 style="margin:0">موكب فاطمة الزهراء</h4></div>
+      <p>موكب الزهراء الطالبین لخادم أهل البيت الحاج علي الحمداني — الأهواز. نخدم الحسين ببث المجالس، حفظ القرآن، واللطميات.</p>
+    </div>
+    <div><h4>روابط</h4><a href="#live">البث المباشر</a><a href="#latmiyat">اللطميات</a><a href="#gallery">المعرض</a><a href="#events">المناسبات</a></div>
+    <div><h4>تابعنا</h4><a href="#">أپارات</a><a href="#">یوتیوب</a><a href="#">انستغرام</a><a href="#">تیلیجرام</a></div>
+  </div>
+  <div class="footer-bottom">© 2024 حسينية موكب فاطمة الزهراء (ع). جميع الحقوق محفوظة.</div>
+</footer>
+
+<script>
+// reveal
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+// menu
+const btn=document.getElementById('menuBtn'), links=document.getElementById('navLinks');
+btn?.addEventListener('click',()=>{const m=links.style.display==='flex'?'none':'flex';links.style.display=m;links.style.flexDirection='column';links.style.position='absolute';links.style.top='72px';links.style.right='0';links.style.left='0';links.style.background='rgba(8,9,10,.98)';links.style.padding='1rem 1.5rem';links.style.borderBottom='1px solid var(--color-line)'});
+// countdown
+function upd(t,d,h,m,s){const diff=t-Date.now();if(diff<=0){[d,h,m,s].forEach(id=>document.getElementById(id).textContent='00');return}document.getElementById(d).textContent=String(Math.floor(diff/86400000)).padStart(2,'0');document.getElementById(h).textContent=String(Math.floor(diff%86400000/3600000)).padStart(2,'0');document.getElementById(m).textContent=String(Math.floor(diff%3600000/60000)).padStart(2,'0');document.getElementById(s).textContent=String(Math.floor(diff%60000/1000)).padStart(2,'0')}
+const n=new Date(),t1=new Date(n);t1.setDate(n.getDate()+32);const t2=new Date(n);t2.setDate(n.getDate()+52);const t3=new Date(n);t3.setDate(n.getDate()+57);
+setInterval(()=>{upd(t1,'d1','h1','m1','s1');upd(t2,'d2','h2','m2','s2');upd(t3,'d3','h3','m3','s3')},1000);
+// coverflow
+const items=[
+  {t:"سيف ذو الفقار",img:"سيف_ذو_الفقار_في_الصحراء_20260914211137.jpeg"},
+  {t:"الملاك الهابط",img:"Angel_descending_with_sacred_sword_20260914211146.jpeg"},
+  {t:"غيوم سماوية",img:"غيوم_سماوية_وأشعة_شمس_ذهبية_20260914211155.jpeg"},
+  {t:"النصل المتوهج",img:"Glowing_sword_blade_20260914211209.jpeg"},
+  {t:"نور الملاك",img:"نور_ملاك_يصد_سيفاً_20260914211215.jpeg"},
+  {t:"حامل السيف",img:"Figure_holding_Dhu_al-Fiqars_sword_20260914211733.jpeg"},
+  {t:"الصحيفة الذهبية",img:"سيف_ذي_الفقار_وصحيفة_ذهبية_20260914211749.jpeg"},
+  {t:"تسليم السيف",img:"Prophet_handing_sword_to_companion_20260914212850.jpeg"},
+];
+let idx=0,hover=false,timer=null;
+const stage=document.getElementById('cfStage'),dots=document.getElementById('cfDots'),bg=document.getElementById('cfBg'),grid=document.getElementById('cfGrid');
+function render(){
+  stage.querySelectorAll('.cf-card').forEach(e=>e.remove());
+  const total=items.length;
+  items.forEach((it,i)=>{
+    const off=(i-idx+total)%total;
+    let tr="translateX(0) scale(.4)",op=0,zi=0,fl="brightness(.4) blur(2px)",center=false;
+    if(off===0){center=true;tr="translateX(0) scale(1)";op=1;zi=30;fl="brightness(1)"}
+    else if(off===1){tr="translateX(285px) scale(.84) rotateY(-24deg)";op=.65;zi=20;fl="brightness(.75)"}
+    else if(off===2){tr="translateX(510px) scale(.68) rotateY(-38deg)";op=.38;zi=10;fl="brightness(.55) blur(1px)"}
+    else if(off===total-1){tr="translateX(-285px) scale(.84) rotateY(24deg)";op=.65;zi=20;fl="brightness(.75)"}
+    else if(off===total-2){tr="translateX(-510px) scale(.68) rotateY(38deg)";op=.38;zi=10;fl="brightness(.55) blur(1px)"}
+    const c=document.createElement('div');c.className='cf-card'+(center?' is-center':'');c.style.transform=tr;c.style.opacity=op;c.style.zIndex=zi;c.style.filter=fl;
+    c.innerHTML=`<img class="photo" src="${it.img}" alt="${it.t}" loading="lazy"><div class="vignette"></div><div class="overlay" style="opacity:${center?1:0};pointer-events:${center?'auto':'none'}"><span style="font-size:.75rem;color:rgba(255,255,255,.8)">${it.t}</span><span style="margin-top:auto;color:#fff;font-weight:700">${it.t}</span></div>`;
+    if(!center)c.addEventListener('click',()=>{idx=i;render();reset()});
+    stage.appendChild(c);
+  });
+  if(bg)bg.src=items[idx].img;
+  dots.innerHTML='';items.forEach((_,i)=>{const b=document.createElement('button');b.style.width=i===idx?'28px':'8px';b.style.background=i===idx?'#d4af37':'rgba(255,255,255,.25)';b.addEventListener('click',()=>{idx=i;render();reset()});dots.appendChild(b)});
+  if(grid && !grid.dataset.built){items.forEach((it,i)=>{const d=document.createElement('div');d.className='mini';d.innerHTML=`<img src="${it.img}" alt="${it.t}"><span>${it.t}</span>`;d.addEventListener('click',()=>{idx=i;render();document.getElementById('gallery').scrollIntoView({behavior:'smooth'});reset()});grid.appendChild(d)});grid.dataset.built="1"}
+}
+function next(){idx=(idx+1)%items.length;render()}
+function prev(){idx=(idx-1+items.length)%items.length;render()}
+function reset(){if(timer)clearInterval(timer);timer=setInterval(()=>{if(!hover)next()},5000)}
+document.getElementById('cfNext')?.addEventListener('click',()=>{next();reset()});
+document.getElementById('cfPrev')?.addEventListener('click',()=>{prev();reset()});
+document.getElementById('cfWrap')?.addEventListener('mouseenter',()=>hover=true);
+document.getElementById('cfWrap')?.addEventListener('mouseleave',()=>hover=false);
+let sx=0;stage?.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+stage?.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>45){d<0?next():prev();reset()}},{passive:true});
+render();reset();
+</script>
+</body>
+</html>
